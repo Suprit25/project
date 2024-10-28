@@ -1,0 +1,252 @@
+/* css reset */
+
+
+body{
+  background-color: rgb(172, 181, 152);
+  
+}
+*{
+ 
+    margin:0px;
+    padding: 0px;
+
+}
+html{
+  scroll-behavior: smooth;
+}
+  /* css variables */
+  :root{
+    --navbar-height:59px;
+  }
+  /* navigation bar */
+  #navbar{
+    display: flex;
+   align-items: center;
+   position: sticky;
+   top: 0px;
+   
+  }
+
+  #navbar::before {
+    position:absolute;
+    content: "";
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity:0.3;
+    
+    top: 0px;
+    left: 0px;
+  }
+  /* navigation bar:logo and image */
+  #logo{
+    margin: 0px 5px;
+
+}
+#logo img{
+    margin: 10px 10px;
+    height: 60px;
+}
+
+  /* navigation bar:list styling */
+  
+  #navbar ul{
+    display: flex;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   
+  }
+   
+  #navbar ul li {
+    list-style-type: none;
+    font-size: 1.1rem;
+    margin-top: 20px;
+ }
+  #navbar ul li a{
+     list-style-type: none;
+     font-size: 20px;
+     display: block;
+     text-decoration: underline;
+     padding: 12px 25px;
+     border-radius: 30px;
+     color: white;
+  }
+  #navbar ul li a:hover{
+    background-color: aqua;
+color: black;
+}
+#home{
+  display: flex;
+  flex-direction: column;
+  padding: 10px 100px;
+  justify-content: center;
+  align-items: center;
+  height: 259px;
+}
+#home::before {
+  position: absolute;
+  content: "";
+  background:url('image/book\ 7.webp') no-repeat center center/cover;
+  width: 100%;
+  height: 55%;
+  z-index: -1;
+  opacity: 0.9;
+  top: 0px;
+ left: 0px;
+ 
+}
+#home h1{
+  text-align: center;
+  color: aliceblue;
+
+}
+#home p{
+  text-align: center;
+  
+  color: aliceblue;
+  font-size: 1rem;
+  font-family: bree 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/* services section */
+ 
+#services{
+  justify-content: center;
+  display: flex;
+  
+}
+
+.box{
+
+  border: 2px solid rgb(169, 45, 45);
+margin: 10px;
+  width: 400px;
+ 
+ height: auto;
+
+  border-radius: 20px;
+  background-color:rgb(225, 218, 218);
+}
+
+ .box img{
+ height: 100px;
+ margin: auto;
+ display: block;
+ margin-top: 20px;
+
+}
+
+  .box p{
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center; 
+  padding: -5px;
+ }
+
+ /* client-section */
+
+ #client-section{
+ height: 500px;
+ 
+ position: relative;
+ }
+
+ #client-section::before{
+  position: absolute;
+  background: url('image/2105008.jpg')no-repeat center center/cover;
+  content: "";
+  z-index: -1;
+  opacity: 0.7;
+  
+  width: 100%;
+  height: 75%;
+ }
+ #client{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+h1.primary-center{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.client-item{
+  padding: 10px;
+}
+.client img{
+  height: 110px;
+}
+/* contact section */
+#contact{
+  position: relative;
+  height: 500px;
+  margin-top: -100px;
+}
+#contact::before{
+  position: absolute;
+  content: "";
+  background: url('image/c1.webp') no-repeat center center/cover;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.9;
+
+}
+#contact-box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 30px;
+}
+#contact-box input,#contact-box textarea{
+  width: 100%;
+  padding: 5px;
+  border-radius: 10px;
+  font-size: 1.0rem;
+}
+#contact-box form{
+  width: 30%;
+}
+#contact-box label{
+  font-size:1.2rem ;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+footer{
+  padding: 5px 25px;
+  background: black;
+  color: white;
+}
+/* utilty classes */
+.primary{
+  font-size: 2.1rem;
+  padding:10px;
+ 
+  font-family: ballu system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.h-primary{
+  font-size: 2.1rem;
+  padding:50px;
+ 
+  font-family: ballu system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.secondary{
+  font-size: 1.8rem;
+  padding:20px ;
+  font-family: ballu system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.btn{
+  padding: 6px 20px;
+  background-color: blueviolet;
+  border: 3px solid black;
+  color: white;
+  margin: 10px;
+  border-radius: 10px ;
+  cursor: pointer;
+}
+.center{
+  text-align: center;
+}
+.btn a{
+  color: white;
+}
